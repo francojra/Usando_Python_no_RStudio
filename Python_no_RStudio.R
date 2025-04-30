@@ -21,4 +21,14 @@ print(z)
 
 # Exemplo 2: Usando Pacotes Python no R ----------------------------------------------------------------------------------------------------
 
+np <- import("numpy")
 
+# Criando um array numpy
+
+arr <- np$array(c(1, 2, 3, 4, 5))
+print(arr)
+
+# Calculando a média com numpy
+
+media <- np$mean(arr)
+print(paste("Média:", media))
