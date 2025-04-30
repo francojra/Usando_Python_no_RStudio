@@ -5,4 +5,20 @@
 
 # Instalando e Configurando o reticulate ---------------------------------------------------------------------------------------------------
 
+install.packages("reticulate")
+library(reticulate)
+
+# Exemplo 1: Executando Código Python no R -------------------------------------------------------------------------------------------------
+
+## Executando um script Python simples
+
+py_run_string("
+x = 10
+y = 20
+z = x + y
+print(z)
+")
+
+# Exemplo 2: Usando Pacotes Python no R ----------------------------------------------------------------------------------------------------
+
 
