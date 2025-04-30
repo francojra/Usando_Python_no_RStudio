@@ -52,16 +52,18 @@ plt$ylabel("Eixo Y")
 plt$title("Gráfico Gerado no Python via R")
 plt$show()
 
+# Limpa a figura atual antes do próximo gráfico
+plt$clf()  # Clear figure
+
 # Gráfico 2
 
-tempo_meses <- c(2, 4, 6, 8, 10)
+tempo_meses <- c("Fevereiro", "Abril", "Junho", "Agosto", "Outubro")
 cresc_planta_cm <- c(3, 5, 7.4, 9.3, 12)
 
 # Criando o gráfico
 
-plt$plot(tempo_meses, cresc_planta_cm)
+plt$bar(tempo_meses, cresc_planta_cm)
 plt$xlabel("Tempo (meses)")
 plt$ylabel("Crescimento de uma planta (cm)")
-plt$title("Gráfico Gerado no Python via R")
 plt$show()
 
