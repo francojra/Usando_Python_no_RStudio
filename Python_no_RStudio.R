@@ -55,7 +55,7 @@ plt$show()
 # Gráfico 2
 
 tempo_meses <- c(2, 4, 6, 8, 10)
-cresc_planta_cm <- c(3, 5, 7,4, 9,3, 12)
+cresc_planta_cm <- c(3, 5, 7.4, 9.3, 12)
 
 # Criando o gráfico
 
