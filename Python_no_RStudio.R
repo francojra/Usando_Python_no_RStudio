@@ -67,3 +67,16 @@ plt$xlabel("Tempo (meses)")
 plt$ylabel("Crescimento de uma planta (cm)")
 plt$show()
 
+# Mostra todas as figuras
+
+plt$subplot(1, 2, 1) # 1 linha, duas colunas, grafico 1
+plt$plot(x, y)
+plt$xlabel("Eixo X")
+plt$ylabel("Eixo Y")
+
+plt$subplot(1, 2, 2) # 1 linha, duas colunas, grafico 2
+plt$bar(tempo_meses, cresc_planta_cm)
+plt$xlabel("Tempo (meses)")
+plt$ylabel("Crescimento de uma planta (cm)")
+
+plt$show()  # Mostra os dois gráficos lado a lado
