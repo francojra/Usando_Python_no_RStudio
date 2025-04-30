@@ -10,7 +10,7 @@ library(reticulate)
 
 # Exemplo 1: Executando Código Python no R -------------------------------------------------------------------------------------------------
 
-## Executando um script Python simples
+# Executando um script Python simples
 
 py_run_string("
 x = 10
@@ -32,3 +32,36 @@ print(arr)
 
 media <- np$mean(arr)
 print(paste("Média:", media))
+
+# Exemplo 3: Criando um Gráfico com Matplotlib ---------------------------------------------------------------------------------------------
+
+plt <- import("matplotlib.pyplot")
+
+# Gráfico 1
+
+# Dados
+
+x <- c(1, 2, 3, 4, 5)
+y <- c(2, 3, 5, 7, 11)
+
+# Criando o gráfico
+
+plt$plot(x, y)
+plt$xlabel("Eixo X")
+plt$ylabel("Eixo Y")
+plt$title("Gráfico Gerado no Python via R")
+plt$show()
+
+# Gráfico 2
+
+tempo_meses <- c(2, 4, 6, 8, 10)
+cresc_planta_cm <- c(3, 5, 7,4, 9,3, 12)
+
+# Criando o gráfico
+
+plt$plot(tempo_meses, cresc_planta_cm)
+plt$xlabel("Tempo (meses)")
+plt$ylabel("Crescimento de uma planta (cm)")
+plt$title("Gráfico Gerado no Python via R")
+plt$show()
+
