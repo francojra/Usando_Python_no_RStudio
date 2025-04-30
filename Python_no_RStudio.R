@@ -80,3 +80,17 @@ plt$xlabel("Tempo (meses)")
 plt$ylabel("Crescimento de uma planta (cm)")
 
 plt$show()  # Mostra os dois gráficos lado a lado
+
+# Exemplo 4: Usando Pandas para Manipulação de Dados ---------------------------------------------------------------------------------------
+
+pd <- import("pandas")
+
+# Criando um DataFrame do Python a partir de um data.frame do R
+
+df_r <- data.frame(
+  nome = c("Alice", "Bob", "Carlos"),
+  idade = c(25, 30, 35)
+)
+
+df_python <- pd$DataFrame(df_r)
+print(df_python)
